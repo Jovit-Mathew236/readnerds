@@ -2,20 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
+
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 356 91% 95%;
+    --foreground: 356 5% 7%;
+    --card: 356 50% 90%;
+    --card-foreground: 356 5% 10%;
+    --popover: 356 91% 95%;
+    --popover-foreground: 356 95% 7%;
+    --primary: 356 69% 53.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 356 30% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 318 30% 85%;
+    --muted-foreground: 356 5% 35%;
+    --accent: 318 30% 80%;
+    --accent-foreground: 356 5% 10%;
+    --destructive: 0 91% 30%;
+    --destructive-foreground: 356 5% 90%;
+    --border: 356 30% 50%;
+    --input: 356 30% 18%;
+    --ring: 356 69% 53.1%;
+    --radius: 0.3rem;
+  }
+
+  .dark {
+    --background: 356 50% 7%;
+    --foreground: 356 5% 90%;
+    --card: 356 50% 7%;
+    --card-foreground: 356 5% 90%;
+    --popover: 356 50% 5%;
+    --popover-foreground: 356 5% 90%;
+    --primary: 356 69% 53.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 356 30% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 318 30% 15%;
+    --muted-foreground: 356 5% 60%;
+    --accent: 318 30% 15%;
+    --accent-foreground: 356 5% 90%;
+    --destructive: 0 91% 30%;
+    --destructive-foreground: 356 5% 90%;
+    --border: 356 30% 18%;
+    --input: 356 30% 18%;
+    --ring: 356 69% 53.1%;
+    --radius: 0.3rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1 {
+    @apply mb-6 text-4xl font-semibold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply mb-5 text-3xl font-semibold leading-snug tracking-tight text-foreground md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply mb-4 text-2xl font-semibold leading-snug text-foreground md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply mb-3 text-xl font-medium leading-snug text-foreground md:text-2xl lg:text-3xl;
+  }
+
+  h5 {
+    @apply mb-2 text-lg font-medium leading-normal text-foreground md:text-xl;
+  }
+
+  h6 {
+    @apply mb-2 text-base font-medium leading-normal text-foreground md:text-lg;
+  }
 }
