@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/medeups/navbar";
 import localFont from "next/font/local";
+import { Toaster } from "@/components/ui/sonner";
 
 const ttHoves = localFont({
   src: [
@@ -56,6 +57,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Toaster />
       </body>
     </html>
   );
