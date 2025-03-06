@@ -152,7 +152,10 @@ const Companies = () => {
         </div>
         <div className="flex-1">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-4 max-w-[450px] m-auto"
+            >
               <FormField
                 control={form.control}
                 name="name"
