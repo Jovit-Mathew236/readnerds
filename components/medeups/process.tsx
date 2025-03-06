@@ -96,15 +96,15 @@ const scrollData: ScrollItem[] = [
 
 const Process = () => {
   return (
-    <div className="relative mt-32">
+    <div className="relative mt-32 w-screen overflow-x-clip">
       {["/assets/images/upperlayer.webp", "/assets/images/lowerlayer.webp"].map(
         (src: string, index: number) => (
           <div
             key={src}
-            className={`absolute right-10 ${
+            className={`absolute right-4 sm:right-10 ${
               index === 0
                 ? "-top-32 md:-top-60 z-30"
-                : "-top-20 md:-top-48 z-10 text-primary"
+                : "-top-16 md:-top-40 z-10 text-primary"
             }`}
           >
             <Image
@@ -141,7 +141,7 @@ const Process = () => {
       </div>
 
       {/* <div className="relative"> */}
-      <div className="absolute -left-28 sm:left-4 top-96 sm:top-40 z-30">
+      <div className="absolute -left-28 sm:left-4 top-[630px] sm:top-40 z-30">
         <Image
           src={"/assets/images/hyperbola.webp"}
           alt="hero Image"
@@ -162,7 +162,7 @@ const Process = () => {
             Icon={Icon}
           />
         ))}
-        <div className="absolute -bottom-32 -left-10 md:left-auto md:bottom-0 md:right-36">
+        <div className="absolute -bottom-32 -left-10 md:left-auto md:bottom-0 md:right-36 z-0">
           <Image
             src={"/assets/images/slashes.webp"}
             alt="hero Image"
@@ -172,6 +172,16 @@ const Process = () => {
             className="w-56 md:w-96"
           />
         </div>
+      </div>
+      <div className="absolute top-[63%] md:top-auto -right-36 md:left-auto md:-bottom-72 md:-right-32 z-20">
+        <Image
+          src={"/assets/images/cylander.webp"}
+          alt="hero Image"
+          width={1200}
+          height={1200}
+          priority
+          className="w-[550px] md:w-[500px]"
+        />
       </div>
     </div>
   );
