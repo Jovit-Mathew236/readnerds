@@ -21,15 +21,15 @@ import {
 } from "../ui/select";
 
 const companyLogos = [
-  { src: "/assets/images/tessol.png", alt: "Tessol" },
-  { src: "/assets/images/thinktac.png", alt: "ThinkTac" },
-  { src: "/assets/images/nosh.png", alt: "Nosh" },
-  { src: "/assets/images/scikraft.png", alt: "Scikraft" },
-  { src: "/assets/images/vayavya.png", alt: "Vayavya" },
-  { src: "/assets/images/iitg.png", alt: "IITG" },
-  { src: "/assets/images/etherwhere.png", alt: "EtherWhere" },
-  { src: "/assets/images/yudurobotics.png", alt: "Yudu Robotics" },
-  { src: "/assets/images/anexgate.png", alt: "AnexGATE" },
+  { src: "/assets/images/tessol.webp", alt: "Tessol" },
+  { src: "/assets/images/thinktac.webp", alt: "ThinkTac" },
+  { src: "/assets/images/nosh.webp", alt: "Nosh" },
+  { src: "/assets/images/scikraft.webp", alt: "Scikraft" },
+  { src: "/assets/images/vayavya.webp", alt: "Vayavya" },
+  { src: "/assets/images/iitg.webp", alt: "IITG" },
+  { src: "/assets/images/etherwhere.webp", alt: "EtherWhere" },
+  { src: "/assets/images/yudurobotics.webp", alt: "Yudu Robotics" },
+  { src: "/assets/images/anexgate.webp", alt: "AnexGATE" },
 ];
 
 const formSchema = z.object({

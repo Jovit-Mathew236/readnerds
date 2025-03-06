@@ -97,7 +97,7 @@ const scrollData: ScrollItem[] = [
 const Process = () => {
   return (
     <div className="relative mt-32">
-      {["/assets/images/upperlayer.png", "/assets/images/lowerlayer.png"].map(
+      {["/assets/images/upperlayer.webp", "/assets/images/lowerlayer.webp"].map(
         (src: string, index: number) => (
           <div
             key={src}
@@ -143,7 +143,7 @@ const Process = () => {
       {/* <div className="relative"> */}
       <div className="absolute -left-28 sm:left-4 top-96 sm:top-40 z-30">
         <Image
-          src={"/assets/images/hyperbola.png"}
+          src={"/assets/images/hyperbola.webp"}
           alt="hero Image"
           width={1200}
           height={1200}
@@ -164,7 +164,7 @@ const Process = () => {
         ))}
         <div className="absolute -bottom-32 -left-10 md:left-auto md:bottom-0 md:right-36">
           <Image
-            src={"/assets/images/slashes.png"}
+            src={"/assets/images/slashes.webp"}
             alt="hero Image"
             width={1200}
             height={1200}
