@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${ttHoves.variable} font-sans w-screen overflow-x-hidden`}
+        className={`${ttHoves.variable} font-sans w-screen bg-secondary overflow-x-hidden`}
       >
         <Navbar />
         {children}

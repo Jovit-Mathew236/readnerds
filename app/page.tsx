@@ -1,3 +1,5 @@
+import Companies from "@/components/medeups/companies";
+import Footer from "@/components/medeups/footer";
 import Hero from "@/components/medeups/hero";
 import Process from "@/components/medeups/process";
 
@@ -6,6 +8,8 @@ export default function Home() {
     <>
       <Hero />
       <Process />
+      <Companies />
+      <Footer />
     </>
   );
 }

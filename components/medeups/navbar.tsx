@@ -12,7 +12,7 @@ const Navbar = () => {
 				height={24}
 				priority
 			/> */}
-      <Logo />
+      <Logo hexColor="#DA3540" />
       <Button
         variant={"outline"}
         className="hidden sm:flex rounded-none px-10 py-6"
