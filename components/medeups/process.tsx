@@ -153,7 +153,7 @@ const Process = () => {
       </div>
       {/* </div> */}
 
-      <div className="relative z-30 px-10 sm:px-36 mt-28 grid grid-cols-1 sm:grid-cols-3 gap-10">
+      <div className="relative z-50 sm:z-30 px-10 sm:px-36 mt-28 grid grid-cols-1 sm:grid-cols-3 gap-10">
         {processData.map(({ id, title, description, icon: Icon }) => (
           <ProcessCard
             key={id}
@@ -173,7 +173,7 @@ const Process = () => {
           />
         </div>
       </div>
-      <div className="absolute top-[63%] md:top-auto -right-36 md:left-auto md:-bottom-72 md:-right-32 z-50">
+      <div className="absolute top-[63%] md:top-auto -right-36 md:left-auto md:-bottom-72 md:-right-32 z-40">
         <Image
           src={"/assets/images/cylander.webp"}
           alt="hero Image"
