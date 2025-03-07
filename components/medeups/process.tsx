@@ -173,7 +173,7 @@ const Process = () => {
           />
         </div>
       </div>
-      <div className="absolute top-[63%] md:top-auto -right-36 md:left-auto md:-bottom-72 md:-right-32 z-20">
+      <div className="absolute top-[63%] md:top-auto -right-36 md:left-auto md:-bottom-72 md:-right-32 z-50">
         <Image
           src={"/assets/images/cylander.webp"}
           alt="hero Image"
