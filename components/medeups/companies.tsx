@@ -106,10 +106,9 @@ const Companies = () => {
       setIsSubmitting(false);
     }
   };
-
   // Memoize the logo grid to prevent unnecessary re-renders
   const LogoGrid = React.memo(() => (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-x-4 md:gap-y-12">
       {companyLogos.map((logo, index) => (
         <Image
           key={`company-logo-${
@@ -120,14 +119,13 @@ const Companies = () => {
           alt={logo.alt}
           width={500}
           height={500}
-          priority={index < 4} // Only prioritize loading the first visible logos
-          loading={index < 4 ? "eager" : "lazy"} // Lazy load the rest
-          className="w-full object-contain h-12"
+          priority={index < 4}
+          loading={index < 4 ? "eager" : "lazy"}
+          className="w-[calc(50%-1rem)] md:w-[calc(25%-1rem)] object-contain h-12"
         />
       ))}
     </div>
   ));
-
   return (
     <div className="bg-primary/20 px-10 sm:px-36 py-28 mt-20 space-y-16 relative">
       <div className="flex text-primary font-bold items-center justify-center gap-4">
